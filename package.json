@@ -1,0 +1,52 @@
+{
+  "name": "ecommerce-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "This project is a small basic ecommerce store built using React.js, Redux.js, and Material-UI.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vccentric/Ecommerce-Store.git"
+  },
+  "keywords": [
+    "react.js",
+    "redux.js",
+    "material-ui",
+    "ecommerce"
+  ],
+  "author": "Christopher Viray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vccentric/Ecommerce-Store/issues"
+  },
+  "homepage": "https://github.com/Vccentric/Ecommerce-Store#readme",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "@material-ui/core": "^3.9.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
+    "react-scripts": "^2.1.3",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.8"
+  }
+}
