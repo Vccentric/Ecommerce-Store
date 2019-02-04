@@ -1,22 +1,16 @@
 import React from 'react';
-import { withStyles, AppBar, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Toolbar, Typography } from '@material-ui/core';
 
-const styles = {
-
-};
-
-const HeaderBar = ({ classes }) => {
+const HeaderBar = (props) => {
     return (
-        <div className={classes.root}>
-            <AppBar position="sticky">
-                <Toolbar>
-                    <Typography variant="h6" color="inherit" className={classes.grow}>
-                        Demo Store
+        <AppBar position="sticky">
+            <Toolbar>
+                <Typography variant="h6" color="inherit">
+                    Demo Store
                     </Typography>
-                </Toolbar>
-            </AppBar>
-        </div>
+            </Toolbar>
+        </AppBar>
     );
 };
 
-export default withStyles(styles)(HeaderBar);
+export default HeaderBar;
