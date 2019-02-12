@@ -8,6 +8,6 @@
  * @version     1.0.0
  */
 
- h1 {
-    color: green;
+#categories {
+    border: 1px solid gray;
 }
