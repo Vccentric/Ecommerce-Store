@@ -2,6 +2,7 @@ import React from 'react';
 import HeaderBar from '../components/HeaderBar';
 import FooterBar from '../components/FooterBar';
 import Categories from '../components/Categories';
+import ProductCard from '../components/ProductCard';
 import { Grid } from '@material-ui/core';
 
 const StoreContainer = (props) => {
@@ -14,7 +15,7 @@ const StoreContainer = (props) => {
                 <Categories />
             </Grid>
             <Grid id="right-container" item xs={8}>
-                <h1>right</h1>
+                <ProductCard />
             </Grid>
             <Grid item xs={12}>
                 <FooterBar />

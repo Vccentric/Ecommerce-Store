@@ -11,3 +11,7 @@
 #categories {
     border: 1px solid gray;
 }
+
+.product-card-image {
+    height: 150px;
+}
