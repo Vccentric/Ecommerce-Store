@@ -1,26 +1,19 @@
 import React from 'react';
 import { Card, CardHeader, CardMedia, CardContent, CardActions, Button, Typography } from '@material-ui/core';
-import productImage from '../assets/oranges.jpg';
 
-const ProductCard = (props) => {
+const ProductCard = ({ name, image, description, price, inStock }) => {
     return (
         <Card className="product-card">
-            <CardHeader title="Product Name" />
+            <CardHeader title={name} />
             <CardMedia
                 classes={{ root: 'product-card-image' }}
-                image={productImage}
-                title="sample product"
+                image={image}
+                title={name}
             />
             <CardContent>
-                <Typography component="p">
-                    This is only a test product. blah blah.
-                </Typography>
-                <Typography component="span">
-                    $10.54
-                </Typography>
-                <Typography component="span">
-                    In Stock
-                </Typography>
+                <Typography component="p">{description}</Typography>
+                <Typography component="span">{price}</Typography>
+                <Typography component="span">{inStock ? 'In Stock' : 'Out of Stock'}</Typography>
             </CardContent>
             <CardActions>
                 <Button color="inherit">Add Item</Button>
