@@ -3,6 +3,7 @@ import HeaderBar from '../components/HeaderBar';
 import FooterBar from '../components/FooterBar';
 import Categories from '../components/Categories';
 import ProductCard from '../components/ProductCard';
+import FeatureListSidebar from './FeatureListSidebar';
 import { Grid } from '@material-ui/core';
 
 import img1 from '../assets/bananas.jpg';
@@ -42,7 +43,7 @@ const StoreContainer = (props) => {
         }
     ];
 
-    const items = products.map((item, index) => {
+    const cards = products.map((item, index) => {
         return (
             <Grid id="left-container" item xs={4}>
                 <ProductCard
@@ -63,10 +64,11 @@ const StoreContainer = (props) => {
             </Grid>
             <Grid id="left-container" item xs={4}>
                 <Categories />
+                <FeatureListSidebar title="New Products" products={products} />
             </Grid>
             <Grid id="right-container" item xs={8}>
                 <Grid id="products-container" container spacing={24}>
-                    {items}
+                    {cards}
                 </Grid>
             </Grid>
             <Grid item xs={12}>

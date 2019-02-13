@@ -10,8 +10,19 @@
 
 #categories {
     border: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+.feature-list-sidebar {
+    border: 1px solid gray;
+    margin-bottom: 20px;
 }
 
 .product-card-image {
     height: 150px;
+}
+
+.product-list-item-image {
+    height: 100px;
+    width: 100px;
 }

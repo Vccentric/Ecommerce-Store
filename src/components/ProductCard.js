@@ -6,7 +6,7 @@ const ProductCard = ({ name, image, description, price, inStock }) => {
         <Card className="product-card">
             <CardHeader title={name} />
             <CardMedia
-                classes={{ root: 'product-card-image' }}
+                className="product-card-image"
                 image={image}
                 title={name}
             />
