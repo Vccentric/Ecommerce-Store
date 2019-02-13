@@ -8,18 +8,28 @@
  * @version     1.0.0
  */
 
+/* ===== General ===== */
+
 #categories {
     border: 1px solid gray;
     margin-bottom: 20px;
 }
 
-.feature-list-sidebar {
-    border: 1px solid gray;
+/* ===== Main Section ===== */
+
+.feature-list {
     margin-bottom: 20px;
 }
 
 .product-card-image {
     height: 150px;
+}
+
+/* ===== Sidebar ===== */
+
+.feature-list-sidebar {
+    border: 1px solid gray;
+    margin-bottom: 20px;
 }
 
 .product-list-item-image {

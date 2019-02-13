@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderBar from '../components/HeaderBar';
 import FooterBar from '../components/FooterBar';
 import Categories from '../components/Categories';
-import ProductCard from '../components/ProductCard';
+import FeatureList from './FeatureList';
 import FeatureListSidebar from './FeatureListSidebar';
 import { Grid } from '@material-ui/core';
 
@@ -43,20 +43,6 @@ const StoreContainer = (props) => {
         }
     ];
 
-    const cards = products.map((item, index) => {
-        return (
-            <Grid id="left-container" item xs={4}>
-                <ProductCard
-                    name={item.name}
-                    image={item.image}
-                    description={item.description}
-                    price={item.price}
-                    inStock={item.inStock}
-                />
-            </Grid>
-        );
-    });
-
     return (
         <Grid id="main-container" container spacing={24}>
             <Grid item xs={12}>
@@ -65,11 +51,11 @@ const StoreContainer = (props) => {
             <Grid id="left-container" item xs={4}>
                 <Categories />
                 <FeatureListSidebar title="New Products" products={products} />
+                <FeatureListSidebar title="On Sale" products={products} />
             </Grid>
             <Grid id="right-container" item xs={8}>
-                <Grid id="products-container" container spacing={24}>
-                    {cards}
-                </Grid>
+                <FeatureList title="Feature Products" products={products} />
+                <FeatureList title="Best Sellers" products={products} />
             </Grid>
             <Grid item xs={12}>
                 <FooterBar />

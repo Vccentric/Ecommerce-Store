@@ -4,11 +4,14 @@ import ProductListItem from '../components/ProductListItem';
 
 const FeatureListSidebar = ({ title, products }) => {
     const listItems = products.map((item, index) => {
+        const { name, image, price } = item;
+        const key = Date.now() + index;
         return (
             <ProductListItem
-                name={item.name}
-                image={item.image}
-                price={item.price}
+                key={key}
+                name={name}
+                image={image}
+                price={price}
             />
         );
     });
@@ -18,7 +21,7 @@ const FeatureListSidebar = ({ title, products }) => {
             <List>
                 <Typography className="title" variant="headline">{title}</Typography>
                 {listItems}
-                <Typography className="title" variant="span">More Items</Typography>
+                <Typography className="title" component="span">More Items</Typography>
             </List>
         </aside>
     );
