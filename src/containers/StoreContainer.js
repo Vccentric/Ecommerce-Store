@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderBar from '../components/HeaderBar';
+import MenuBar from '../components/MenuBar';
 import FooterBar from '../components/FooterBar';
 import Categories from '../components/Categories';
 import PageArticle from '../components/PageArticle';
@@ -30,6 +31,7 @@ class StoreContainer extends React.Component {
             <Grid id="main-container" container spacing={24}>
                 <Grid item xs={12}>
                     <HeaderBar />
+                    <MenuBar />
                 </Grid>
                 <Grid id="left-container" item xs={4}>
                     <Categories />
