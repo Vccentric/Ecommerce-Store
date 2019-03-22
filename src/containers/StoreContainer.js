@@ -28,17 +28,17 @@ class StoreContainer extends React.Component {
         Orders placed here cannot be fulfilled as all the sample products listed in this store are for demonstration and testing purposes only.`;
         
         return (
-            <Grid id="main-container" container spacing={24}>
+            <Grid id="main-container" container spacing={16}>
                 <Grid item xs={12}>
                     <HeaderBar />
                     <MenuBar />
                 </Grid>
-                <Grid id="left-container" item xs={4}>
+                <Grid id="left-container" item xs={12} sm={4}>
                     <Categories />
                     <FeatureListSidebar title="New Products" products={items} />
                     <FeatureListSidebar title="On Sale" products={items} />
                 </Grid>
-                <Grid id="right-container" item xs={8}>
+                <Grid id="right-container" item xs={12} sm={8}>
                     <PageArticle title="Welcome to the Demo Store!!" text={text} />
                     <FeatureList title="Feature Products" products={items} />
                     <FeatureList title="Best Sellers" products={items} />

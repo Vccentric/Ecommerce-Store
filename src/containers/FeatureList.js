@@ -7,7 +7,7 @@ const FeatureList = ({ title, products }) => {
         const { name, image, description, price, inStock } = item;
         const key = Date.now() + index;
         return (
-            <Grid key={key} item xs={4}>
+            <Grid key={key} item xs={6} sm={4}>
                 <ProductCard
                     name={name}
                     image={image}
@@ -22,7 +22,7 @@ const FeatureList = ({ title, products }) => {
     return (
         <section className="feature-list">
             <h2 className="title">{title}</h2>
-            <Grid className="feature-list" container spacing={24}>
+            <Grid className="feature-list" container spacing={16}>
                 {cards}
             </Grid >
         </section>
