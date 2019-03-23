@@ -6,7 +6,6 @@ import Categories from '../components/Categories';
 import PageArticle from '../components/PageArticle';
 import FeatureList from './FeatureList';
 import FeatureListSidebar from './FeatureListSidebar';
-import { Grid } from '@material-ui/core';
 
 class StoreContainer extends React.Component {
 
@@ -26,27 +25,29 @@ class StoreContainer extends React.Component {
         const items = this.state.products;
         const text = `It illustrates operation and features of X-Cart - all-in-one eCommerce solution for swift and easy launch of a professional online store. 
         Orders placed here cannot be fulfilled as all the sample products listed in this store are for demonstration and testing purposes only.`;
-        
+
         return (
-            <Grid id="main-container" container spacing={16}>
-                <Grid item xs={12}>
+            <div id="page-container">
+                <div id="header-container">
                     <HeaderBar />
                     <MenuBar />
-                </Grid>
-                <Grid id="left-container" item xs={12} sm={4}>
-                    <Categories />
-                    <FeatureListSidebar title="New Products" products={items} />
-                    <FeatureListSidebar title="On Sale" products={items} />
-                </Grid>
-                <Grid id="right-container" item xs={12} sm={8}>
-                    <PageArticle title="Welcome to the Demo Store!!" text={text} />
-                    <FeatureList title="Feature Products" products={items} />
-                    <FeatureList title="Best Sellers" products={items} />
-                </Grid>
-                <Grid item xs={12}>
+                </div>
+                <div id="body-content-container">
+                    <div id="sidebar-container">
+                        <Categories />
+                        <FeatureListSidebar title="New Products" products={items} />
+                        <FeatureListSidebar title="On Sale" products={items} />
+                    </div>
+                    <div id="main-content-container">
+                        <PageArticle title="Welcome to the Demo Store!!" text={text} />
+                        <FeatureList title="Feature Products" products={items} />
+                        <FeatureList title="Best Sellers" products={items} />
+                    </div>
+                </div>
+                <div id="footer-container">
                     <FooterBar />
-                </Grid>
-            </Grid>
+                </div>
+            </div>
         );
     }
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
 import ProductCard from '../components/ProductCard';
 
 const FeatureList = ({ title, products }) => {
@@ -7,24 +6,23 @@ const FeatureList = ({ title, products }) => {
         const { name, image, description, price, inStock } = item;
         const key = Date.now() + index;
         return (
-            <Grid key={key} item xs={6} sm={4}>
-                <ProductCard
-                    name={name}
-                    image={image}
-                    description={description}
-                    price={price}
-                    inStock={inStock}
-                />
-            </Grid>
+            <ProductCard
+                key={key}
+                name={name}
+                image={image}
+                description={description}
+                price={price}
+                inStock={inStock}
+            />
         );
     });
 
     return (
         <section className="feature-list">
             <h2 className="title">{title}</h2>
-            <Grid className="feature-list" container spacing={16}>
+            <div className="cards-container">
                 {cards}
-            </Grid >
+            </div>
         </section>
     );
 };
