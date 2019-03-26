@@ -18,12 +18,17 @@
 
 #header-container {
     flex: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 #body-content-container {
     flex: 1;
     display: flex;
     flex-direction: row;
+    margin-top: 66px;
 }
 
 #footer-container {
@@ -43,6 +48,38 @@
 #categories {
     border: 1px solid gray;
     margin-bottom: 20px;
+}
+
+/* ===== Main Content ===== */
+
+#headerbar {
+    background-color: whitesmoke;
+    display: flex;
+}
+
+#headerbar .logo {
+    flex: 1;
+    margin: 10px 10px 10px 20px;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+}
+
+#headerbar .menubar {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#headerbar .menubar li {
+    flex: 1;
+    margin: auto;
+    font-size: 20px;
 }
 
 /* ===== Main Content ===== */

@@ -1,6 +1,5 @@
 import React from 'react';
 import HeaderBar from '../components/HeaderBar';
-import MenuBar from '../components/MenuBar';
 import FooterBar from '../components/FooterBar';
 import Categories from '../components/Categories';
 import PageArticle from '../components/PageArticle';
@@ -30,7 +29,6 @@ class StoreContainer extends React.Component {
             <div id="page-container">
                 <div id="header-container">
                     <HeaderBar />
-                    <MenuBar />
                 </div>
                 <div id="body-content-container">
                     <div id="sidebar-container">
