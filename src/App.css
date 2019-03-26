@@ -79,3 +79,37 @@
     height: 100px;
     width: 100px;
 }
+
+/* ===== Footer ===== */
+
+#footerbar {
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#footerbar .links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#footerbar ul.links-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+}
+
+#footerbar .header {
+    font-weight: bold;
+    color: black;
+}
+
+#footerbar li {
+    padding: 5px;
+    color: #5194c5;
+}
