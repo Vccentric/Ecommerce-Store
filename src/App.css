@@ -29,6 +29,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 66px;
+    flex-wrap: wrap;
 }
 
 #footer-container {
@@ -37,12 +38,16 @@
 
 #sidebar-container {
     flex: 1;
-    padding: 10px;
+    margin: 10px;
 }
 
-#main-content-container {
+#side-content-container {
     flex: 3;
-    padding: 10px;
+    margin: 10px;
+}
+
+#full-content-container {
+    width: 100%;
 }
 
 #categories {
@@ -50,7 +55,7 @@
     margin-bottom: 20px;
 }
 
-/* ===== Main Content ===== */
+/* ===== Header ===== */
 
 #headerbar {
     background-color: whitesmoke;

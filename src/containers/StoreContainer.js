@@ -5,6 +5,7 @@ import Categories from '../components/Categories';
 import PageArticle from '../components/PageArticle';
 import FeatureList from './FeatureList';
 import FeatureListSidebar from './FeatureListSidebar';
+import ProductDetail from '../components/ProductDetail';
 
 class StoreContainer extends React.Component {
 
@@ -36,10 +37,13 @@ class StoreContainer extends React.Component {
                         <FeatureListSidebar title="New Products" products={items} />
                         <FeatureListSidebar title="On Sale" products={items} />
                     </div>
-                    <div id="main-content-container">
+                    <div id="side-content-container">
                         <PageArticle title="Welcome to the Demo Store!!" text={text} />
                         <FeatureList title="Feature Products" products={items} />
                         <FeatureList title="Best Sellers" products={items} />
+                    </div>
+                    <div id="full-content-container">
+                        <ProductDetail />
                     </div>
                 </div>
                 <div id="footer-container">
